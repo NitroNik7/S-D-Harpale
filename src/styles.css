@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@media only screen and (min-width: 670px)  {
+    .slick-prev, .slick-next{
+        /* background-color:black !important; */
+        /* outline:  black 1px solid !important;
+        border: red 1px solid !important;
+        color: black  !important; */
+        /* color: grey !important; */
+        height: 45px;
+        width: 40px;
+        background: grey !important;
+        z-index: 100;
+        border-radius: 100px;
+        
+    }
+}

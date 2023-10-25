@@ -1,0 +1,42 @@
+<div class="navbar sticky-top navbar-expand-lg navbar-light fw-bold" style="background-color: #952742;">
+  <div class="container-fluid">
+    <a class="navbar-brand pe-lg-5 ps-lg-5" href="#" >
+      <!-- <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+        class="d-inline-block align-text-top"> Bootstrap
+    </a> -->
+    <img src="./assets/Images/SDHarpale.jpg" class="rounded-pill" alt="" width="200" height="50">
+    <!-- EHV Projects -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBtn">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-lg-fill" id="collapseBtn">
+      <ul class="navbar-nav flex-lg-fill ps-lg-5">
+        <li class="nav-item flex-lg-fill">
+          <a routerLink="/home" class="nav-link text-center text-white">Home</a>
+          <!-- <router-outlet></router-outlet> -->
+        </li>
+        <li class="nav-item flex-lg-fill">
+          <a routerLink="/services" class="nav-link text-center text-white">Services</a>
+          <!-- <router-outlet></router-outlet> -->
+        </li>
+        <li class="nav-item flex-lg-fill">
+          <a routerLink="/projects" class="nav-link text-center text-white" >Projects</a>
+          <!-- <router-outlet></router-outlet> -->
+        </li>
+        <li class="nav-item dropdown flex-lg-fill">
+          <a class="nav-link dropdown-toggle text-white text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu text-center"  style="background-color: #952742; width: 100%;" aria-labelledby="navbarDropdown">
+            <li><a routerLink="/company" class="dropdown-item text-white flex-lg-fill" href="#">Company</a></li>
+            <li><a routerLink="/contact-us"  class="dropdown-item text-white flex-lg-fill" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Comments
+
+# Installing Bootstrap into Angular project:
+Installed `Bootstrap` to Angular project using [(https://www.techiediaries.com/angular-bootstrap/#)]
+Then, add `"./node_modules/bootstrap/dist/css/bootstrap.min.css" to angular.json > build > styles`
+
+Also add `"./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" to angular.json > build > scripts`

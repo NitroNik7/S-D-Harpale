@@ -1,0 +1,36 @@
+<div *ngIf="show">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+    (breakpoint)="breakpoint($event)" responsive="breakpoints">
+    <li ngxSlickItem *ngFor="let card of cards" class="slide list-group-item border-0">
+
+        <div class="card text-center">
+            <img class="d-flex justify-content-center" src="{{ card.img }}" alt="" style="width: 100%; height: 300px;">
+            <div class="card-body">
+                <h5 class="card-title">{{card.title}}</h5>
+                <p class="card-text">{{card.text}}</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+    </li>
+
+</ngx-slick-carousel>
+</div>
+
+<div *ngIf="!show">
+    
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+    (breakpoint)="breakpoint($event)" responsive="breakpoints">
+    <li ngxSlickItem *ngFor="let card of latest_key_projects" class="slide list-group-item border-0">
+
+        <div class="card text-center">
+            <img class="d-flex justify-content-center" src="{{ card.img }}" alt="" style="width: 100%; height: 300px;">
+            <div class="card-body">
+                <h5 class="card-title">{{card.title}}</h5>
+                <p class="card-text">{{card.text}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a> 
+            </div>
+        </div>
+    </li>
+
+</ngx-slick-carousel>
+</div> 
